@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    word-wrap: break-word;
+}
+
+:root {
+    --body: #EFEFEF;
+    --navbar-color: white; 
+    --primary: #4299EA;
+    --navbar-height: 65px;
+    --link-color: #0084FF;
+    --font-color: #262626;
+    --error: rgb(255, 36, 36);
+    --heart: rgb(255, 44, 90);
+}
+
+body {
+    background-color: var(--body);
+}
+
+#app-root {
+    margin-top: var(--navbar-height);
+    color: var(--font-color);
+}
+
+/* Buttons */
+
+.btn {
+    padding: 11px 27px;
+    background-color: var(--body);
+    border: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    filter: brightness(95%);
+    cursor: pointer;
+}
+
+/* General */
+
+.card.primary, .btn.primary {
+    background-color: var(--primary);
+    color: white !important;
+}
+
+p, a {
+    font-size: 11px;
+}
+
+a {
+    color: var(--link-color);
+}
+
+section {
+    padding: 70px;
+}
+
+.mt {
+    margin-top: 20px;
+}
+
+section {
+    padding: 30px;
+}

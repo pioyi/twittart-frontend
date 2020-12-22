@@ -1,0 +1,51 @@
+.app-layout {
+    display: flex;
+    justify-content: center;
+}
+
+.app-layout > div {
+    padding: 60px;
+    margin: 0 5px;
+}
+
+.layout__left {
+    background-color: white;
+    min-height: 100vh;
+    flex-grow: 2;
+    max-width: 530px;
+}
+
+.layout__right {
+    max-width: 420px;
+}
+
+.card {
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.card__title {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+    .layout__left {
+        max-width: 100%;
+        width: 100%;
+        min-height: 450px;
+    }
+
+    .app-layout .layout__right {
+        padding: 35px;
+    }
+
+    .app-layout {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
