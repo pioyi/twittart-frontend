@@ -4,7 +4,7 @@ Twittart is a fullstack social media app built with React.js and GraphQl.
 
 ## Getting Started
 
-This repository is deticated to the fronend side of this project. Check out [this repo](https://github.com/pioyi/twittart-backend) and take a closer look at the backend code, using GraphQL. The app is currently active at https://twittart.netlifyapp.com !
+This repository is deticated to the fronend side of this project. Check out [this repo](https://github.com/pioyi/twittart-backend) and take a closer look at the backend code, using GraphQL. The app is currently active at https://twittart.netlify.app !
 
 
 
