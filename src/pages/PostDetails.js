@@ -17,12 +17,7 @@ function PostDetails(props) {
         }
     })
 
-    const [createComment] = useMutation(CREATE_COMMENT, {
-        onError(err) {
-            console.log(err)
-        }
-    })
-
+    const [createComment] = useMutation(CREATE_COMMENT)
     if (loading) return <Spinner />
 
     return data.post && (

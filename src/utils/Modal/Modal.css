@@ -34,3 +34,12 @@
     margin-top: 20px;
     width: 100%;
 }
+
+@media (max-width: 400px) {
+    .modal {
+        width: 100%;
+    }
+    .modal__container {
+        padding: 5px;
+    }
+}

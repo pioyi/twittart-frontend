@@ -20,7 +20,7 @@ function RightFrame() {
             
             <div className="card bg-white">
                 <h4 className="card__title">Twittart is Open Source!</h4>
-                <p>Are you a dev? Check out our detailed <a href="https://github.com/pioyi" target="_blank" rel="noreferrer">github repository</a> where we showcase the technologies that made this project possible.</p>
+                <p>Are you a dev? Check out our detailed <a href="https://github.com/pioyi/twittart-frontend" target="_blank" rel="noreferrer">github repository</a> where we showcase the technologies that made this project possible.</p>
             </div>
         </div>
     )
