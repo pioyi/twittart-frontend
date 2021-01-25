@@ -15,8 +15,13 @@
     --navbar-height: 65px;
     --link-color: #0084FF;
     --font-color: #262626;
-    --error: rgb(255, 36, 36);
     --heart: rgb(255, 44, 90);
+
+    --submit: #5742c3;
+    --submit-bg: #270caf17;
+
+    --error: #ec1f3a;
+    --error-bg: #ec1f3a10;
 }
 
 body {

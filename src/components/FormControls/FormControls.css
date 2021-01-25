@@ -14,20 +14,29 @@ textarea {
     padding: 20px;
 }
 
-textarea:focus, button {
+textarea:focus, button, input:focus {
     outline: none;
 }
 
-input:focus {
-    outline: none;
-    border: 2px solid var(--primary);
+form input:focus, textarea:focus {
+    border: 2px solid var(--submit);
+    background-color: var(--submit-bg);
+}
+
+.form__control.error input, .form__control.error textarea {
+    border: 2px solid var(--error);
+    background-color: var(--error-bg);
+}
+
+.form__control.error label {
+    color: var(--error);
 }
 
 input, .form-flex button[type="submit"] {
     width: 100%;
 }
 
-.form-control {
+.form__control {
     margin-bottom: 20px;
 }
 
@@ -45,7 +54,7 @@ form {
 }
 
 label {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
 }
 

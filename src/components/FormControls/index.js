@@ -1,14 +1,19 @@
 import "./FormControls.css"
-import { Field, ErrorMessage } from "formik"
+import { useField } from "formik"
 
-export const Input = ({ name, label, ...rest }) => {
+export const Input = ({ label, as, ...props }) => {
+    const [field, meta] = useField(props)
+
     return (
-        <div className="form-control">
-            { label && <label htmlFor={name}>{ label }</label> }
-            <Field name={name} {...rest} />
-            <ErrorMessage name={name}>
-                {err => <small className="form-error">{err}</small>}
-            </ErrorMessage>
+        <div className={`form__control ${meta.error ? "error" : ""}`}>
+            <label htmlFor={field.name}>
+                { meta.error || label }
+            </label>
+            { as === "textarea" ? (
+                <textarea {...field} {...props} />
+            ) : (
+                <input {...field} {...props} />
+            )}
         </div>
     )
 }
